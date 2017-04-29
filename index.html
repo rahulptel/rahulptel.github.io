@@ -42,12 +42,12 @@
 
 </head>
 
-<body>
+<body class="container">
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 
-	<div id="info" class="row container hide-on-small-only">				
+	<div id="info" class="row hide-on-small-only">				
 		<div id="navigation" class="col s12 m6 l6 center" style="z-index: 1; overflow: hidden;position: fixed; left: 5vw;">
 			<img class="circle" src="images/2.jpg" style="height: 200px; margin-top: 40px; ">
 			<h4 style="font-family: Roboto; font-weight: 300;" class="center hide-on-small-only">Rahul Patel</h4>
@@ -69,17 +69,17 @@
 			</div>		
 		</div>
 
-		<div id="content" class="col m6 l6" style="float: right;">
+		<div id="content" class="col m6 l6 push-l2 push-m2" style="float: right; width: 65%; text-align: justify;">
 			<section id="about">
 				<h4 style="font-family: Roboto; font-weight: 300">About Me</h4><hr>
 
 				<span style="font-family: Roboto; font-weight: 300"><p>I prefer to think of people as <em>N</em> dimensional vectors, where each dimension is the factor by which they are driven. 
-				And life is all about finding those vectors whose projection is maximum on yours.</p>
+				And life is all about finding those vectors whose projection is maximum on yours.</p>				
 				<p>
-					I hold a B.Tech. in Information and Communication Technology. As a lifelong learner, I love to study state-of-the-art techniques aimed at mitigating problems of humanity.   
+					My primary research interests are into applications of machine learning into areas like computer vision and natural language processing. Currently, I am exploring about Generative Adversarial Nets <a href="https://arxiv.org/abs/1406.2661">(Goodfellow et. al.)</a>.
 				</p>
 				<p>
-					My primary research interests are into machine learning, computer vision and the optimization problems arising out of it. Currently, I am exploring about Generative Adversarial Nets <a href="https://arxiv.org/abs/1406.2661">(Goodfellow et. al.)</a>.
+					I hold a B.Tech. in Information and Communication Technology. As a lifelong learner, I love to study state-of-the-art techniques aimed at mitigating problems of humanity.   
 				</p>
 				<p>When <em>technically</em> at rest, I like to read non-fiction, specifically South-Asia geopolitics and swim.</p>
 				</span>										                                
@@ -197,22 +197,55 @@
 
 			<section id="project">
 				<h4 style="font-family: Roboto; font-weight: 300">Projects</h4><hr>
-				<div class="row">
-					<div class="card col l6 m6 s12 small">
-					    <div class="card-image waves-effect waves-block waves-light">
-					      	<img class="activator" src="images/gans.png">
-					    </div>
-					    <div class="card-content">
-					      	<span class="card-title activator grey-text text-darken-4">Generative Adversarial Network<i class="material-icons right">more_vert</i></span>
-					      	<p><a href="#">This is a link</a></p>
-					    </div>
-					    <div class="card-reveal">
-					      	<span class="card-title grey-text text-darken-4">GANs<i class="material-icons right">close</i></span>
-					      	<p></p>
-					    </div>
+				
+				<div class="row" style="font-weight: 300">					
+					<div class="col l4 m s12 center">
+						<img src="images/gans.gif" style="height: 200px; padding-top: 10px">				    
 					</div>
 
-					<div class="card col l6 m6 s12 small">
+					<div class="col l8 m8 s12" style="padding-left: 25px">
+						<h5 style="font-weight: 300">Generative Adversarial Nets</h5>
+						<p>Hellosadajdak</p>
+						<a href="http://wiseodd.github.io/img/2016-09-17-gan-tensorflow/training.gif">Image ref.</a>					    
+					</div>
+				</div>
+
+				<div class="row" style="font-weight: 300">
+					<div class="col l4 m4 s12 center">
+						<img src="images/visionEd_logo.png" style="height: 200px;padding-top: 10px;">		    
+					</div>
+
+					<div class="col l8 m8 s12" style="padding-left: 25px">
+						<h5 style="font-weight: 300">visionEd</h5>
+						<p>visionEd is a block based rapid prototyping typing tool for computer vision and image processing applications. On one hand, it is extremely easy for novice users to start experimenting with the blocks and visualize various algorithms on the other hand, the rich library helps the experts quickly testing out their ideas without much hassale.</p>					    
+					</div>
+				</div>
+
+				<div class="row" style="font-weight: 300">
+					<div class="col l4 m4 s12 center">
+						<img src="images/checkit.png" style="height: 200px; padding-top: 10px; padding-left: 15px">		    
+					</div>
+
+					<div class="col l8 m8 s12" style="padding-left: 25px">
+						<h5 style="font-weight: 300">CheckIt Go</h5>
+						<p>CheckIt Go is a national award winning research project, which has off lately turned into a handy tool for evaluating/checking OMR sheets used during exams using mobile phones. The application though working, is still in it's beta undergoing various crucial improvements.</p>					    
+					</div>
+				</div>
+
+				<div class="row" style="font-weight: 300">
+					<div class="col l4 m4 s12">
+						<img src="images/main23.png" style="width: 200px; padding-top: 10px">		    
+					</div>
+
+					<div class="col l8 m8 s12" style="padding-left: 25px">
+						<h5 style="font-weight: 300">Face detection on HD video</h5>
+						<p>CheckIt Go is a national award winning research project, which has off lately turned into a handy tool for evaluating/checking OMR sheets used during exams using mobile phones. The application though working, is still in it's beta undergoing various crucial improvements.</p>					    
+					</div>
+				</div>
+
+
+
+					<!-- <div class="card col l6 m6 s12 small">
 					    <div class="card-image waves-effect waves-block waves-light">
 					      	<img class="activator" src="images/visionEd_logo.png">
 					    </div>
@@ -242,7 +275,7 @@
 
 					<div class="card col l6 m6 s12 small">
 					    <div class="card-image waves-effect waves-block waves-light">
-					      	<img class="activator" src="images/office.jpg">
+					      	<img class="activator" src="images/main23.png">
 					    </div>
 					    <div class="card-content">
 					      	<span class="card-title activator grey-text text-darken-4">Real Time Face Detection on HD Video<i class="material-icons right">more_vert</i></span>
@@ -254,9 +287,8 @@
 					    </div>
 					</div>	
 				</div>							
-			</section>
+			</section> -->
 
-			
 			<section id="contact">
 				<h4 style="font-family: Roboto; font-weight: 300">Contact</h4><hr>
 				<span style="font-weight: 300">
@@ -459,7 +491,7 @@
 
 					<div class="card col l6 m6 s12 small">
 					    <div class="card-image waves-effect waves-block waves-light">
-					      	<img class="activator" src="images/office.jpg">
+					      	<img class="activator" src="images/main23.png">
 					    </div>
 					    <div class="card-content">
 					      	<span class="card-title activator grey-text text-darken-4">Protein Classification<i class="material-icons right">more_vert</i></span>
